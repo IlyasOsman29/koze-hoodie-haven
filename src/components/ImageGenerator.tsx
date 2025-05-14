@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
 import { useImageGeneration } from '../contexts/ImageGenerationContext';
-import { Gallery, Image } from 'lucide-react';
+import { GalleryVertical, Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const PROMPT_SUGGESTIONS = [
@@ -111,7 +111,7 @@ const ImageGenerator = () => {
       <Card className="animate-on-scroll">
         <CardHeader>
           <CardTitle className="text-koze-green flex items-center gap-2">
-            <Gallery className="h-5 w-5" />
+            <GalleryVertical className="h-5 w-5" />
             Billedgenerator
           </CardTitle>
         </CardHeader>
