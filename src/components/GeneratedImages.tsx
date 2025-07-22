@@ -18,19 +18,19 @@ const GeneratedImages = () => {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    toast.success("Billede downloadet");
+    toast.success("Image downloaded");
   };
 
   const handleCopyUrl = (url: string) => {
     navigator.clipboard.writeText(url);
-    toast.success("Billedets URL kopieret til udklipsholderen");
+    toast.success("Image URL copied to clipboard");
   };
 
   return (
     <div className="space-y-6">
       {generatedImages.length > 0 ? (
         <>
-          <h3 className="text-2xl font-bold text-koze-green">Genererede billeder</h3>
+          <h3 className="text-2xl font-bold text-koze-green">Generated Images</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {generatedImages.map((image, index) => (
               <Card key={index} className="overflow-hidden group">
@@ -83,7 +83,7 @@ const GeneratedImages = () => {
                   className="absolute top-2 right-2 bg-koze-green/90 hover:bg-koze-green"
                   onClick={() => setSelectedImage(null)}
                 >
-                  Luk
+                  Close
                 </Button>
               </div>
             </div>
@@ -92,9 +92,9 @@ const GeneratedImages = () => {
       ) : (
         <div className="text-center py-10 bg-koze-beige/50 rounded-lg">
           <ImageIcon className="mx-auto h-12 w-12 text-koze-green/40 mb-3" />
-          <h3 className="text-xl font-medium text-koze-green mb-2">Ingen billeder endnu</h3>
+          <h3 className="text-xl font-medium text-koze-green mb-2">No images yet</h3>
           <p className="text-koze-green/70">
-            Generer dine første billeder ved hjælp af billedgeneratoren ovenfor.
+            Generate your first images using the image generator above.
           </p>
         </div>
       )}

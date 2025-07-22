@@ -9,31 +9,31 @@ const About = () => {
           <div className="aspect-[4/3] bg-koze-light rounded-2xl flex items-center justify-center">
             {/* We'll replace this with actual founder image */}
             <div className="text-koze-muted text-center px-8">
-              <p className="text-lg font-medium mb-2">Grundlæggere</p>
-              <p className="text-sm">De to grundlæggere af KOZE</p>
+              <p className="text-lg font-medium mb-2">Founders</p>
+              <p className="text-sm">The two founders of KOZE</p>
             </div>
           </div>
         </div>
         
         <div className="animate-on-scroll order-1 lg:order-2" style={{animationDelay: "0.2s"}}>
           <h2 className="text-3xl md:text-4xl font-bold text-koze-green mb-6 text-balance">
-            Historien bag KOZE
+            The story behind KOZE
           </h2>
           <div className="space-y-4 text-koze-green/90">
             <p>
-              KOZE er startet af to tidligere kollegaer fra tech-branchen, efter vi oplevede hvordan en kollega blev fyret pga. angst, der forhindrede ham i at kunne klare jobbet i et stresset salgsmiljø.
+              KOZE was started by two former colleagues from the tech industry, after we experienced how a colleague was fired due to anxiety that prevented him from being able to handle the job in a stressed sales environment.
             </p>
             <p>
-              Det satte tankerne i gang – og vi besluttede at skabe et produkt og et brand, der både tilbyder fysisk komfort (gennem vægtede hoodies) og emotionel støtte (gennem et community og åbenhed om mental sundhed).
+              It got us thinking – and we decided to create a product and brand that offers both physical comfort (through weighted hoodies) and emotional support (through a community and openness about mental health).
             </p>
             <p>
-              Vores mission er at hjælpe mennesker med at finde ro i en hektisk hverdag. Vi tror på, at små ting kan gøre en stor forskel for vores mentale velvære.
+              Our mission is to help people find peace in a hectic everyday life. We believe that small things can make a big difference to our mental well-being.
             </p>
           </div>
           <Button 
             className="mt-6 bg-koze-green hover:bg-koze-green/90 text-white font-medium"
           >
-            Læs mere om vores værdier
+            Read more about our values
           </Button>
         </div>
       </div>

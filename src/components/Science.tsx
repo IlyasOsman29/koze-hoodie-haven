@@ -11,48 +11,48 @@ const Science = () => {
     <section id="science" className="section-padding bg-koze-beige">
       <div className="text-center mb-12 animate-on-scroll max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-koze-green mb-4">
-          Hvorfor vægtede hoodies virker
+          Why weighted hoodies work
         </h2>
         <p className="text-koze-green/90 text-balance">
-          Vægtede produkter har længe været brugt som terapeutiske værktøjer. 
-          Dyb trykstimulering (Deep Pressure Stimulation) har vist sig at reducere angst og stress gennem flere videnskabelige studier.
+          Weighted products have long been used as therapeutic tools. 
+          Deep Pressure Stimulation has been shown to reduce anxiety and stress through several scientific studies.
         </p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll" style={{animationDelay: "0.2s"}}>
         <SciencePoint 
-          title="Øger produktion af serotonin" 
-          description="Dyb trykstimulering øger kroppens produktion af serotonin - et hormon der hjælper med at regulere humør og skabe en følelse af velvære."
+          title="Increases serotonin production" 
+          description="Deep pressure stimulation increases the body's production of serotonin - a hormone that helps regulate mood and create a sense of well-being."
         />
         <SciencePoint 
-          title="Sænker kortisol niveauer" 
-          description="Studier viser at vægtede produkter kan hjælpe med at sænke niveauet af stresshormonet kortisol, hvilket kan reducere oplevelsen af angst og uro."
+          title="Lowers cortisol levels" 
+          description="Studies show that weighted products can help lower the level of the stress hormone cortisol, which can reduce the experience of anxiety and restlessness."
         />
         <SciencePoint 
-          title="Skaber tryghedsfølelse" 
-          description="Den jævnt fordelte vægt giver en fornemmelse af at blive omfavnet, hvilket kan have en beroligende effekt på nervesystemet."
+          title="Creates sense of security" 
+          description="The evenly distributed weight gives a feeling of being embraced, which can have a calming effect on the nervous system."
         />
         <SciencePoint 
-          title="Forbedret søvnkvalitet" 
-          description="Mange brugere af vægtede produkter rapporterer om forbedret søvn og lettere ved at falde i søvn takket være den beroligende effekt."
+          title="Improved sleep quality" 
+          description="Many users of weighted products report improved sleep and easier falling asleep thanks to the calming effect."
         />
         <SciencePoint 
-          title="Mindsker sansestimuli" 
-          description="For mennesker der er sensitive overfor sansestimuli, kan vægtede produkter hjælpe med at fokusere og mindske oplevelsen af overstimulering."
+          title="Reduces sensory stimuli" 
+          description="For people who are sensitive to sensory stimuli, weighted products can help focus and reduce the experience of overstimulation."
         />
         <SciencePoint 
-          title="Støtter opmærksomhed og fokus" 
-          description="Forskning peger på at dyb trykstimulering kan forbedre evnen til at koncentrere sig og fastholde opmærksomhed over længere tid."
+          title="Supports attention and focus" 
+          description="Research suggests that deep pressure stimulation can improve the ability to concentrate and maintain attention over longer periods."
         />
       </div>
       
       <div className="mt-12 text-center animate-on-scroll" style={{animationDelay: "0.4s"}}>
         <p className="italic text-koze-green/80 max-w-2xl mx-auto">
-          "Vores vægtede hoodies er baseret på årtiers forskning i dyb trykstimulering. 
-          Vi har arbejdet sammen med terapeuter for at skabe et produkt, der virkelig hjælper med at skabe ro i en travl hverdag."
+          "Our weighted hoodies are based on decades of research in deep pressure stimulation. 
+          We have worked with therapists to create a product that truly helps create peace in a busy everyday life."
         </p>
         <p className="mt-4 font-medium text-koze-green">
-          - KOZE grundlæggerne
+          - The KOZE founders
         </p>
       </div>
     </section>
