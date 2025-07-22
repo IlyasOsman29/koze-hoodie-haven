@@ -10,11 +10,11 @@ import { GalleryVertical, Image } from 'lucide-react';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const PROMPT_SUGGESTIONS = [
-  "Minimalistisk mørkegrøn hoodie med vægtede paneler, stilren, skandinavisk design",
-  "Person der afslappet sidder i en stue med en beige weighted hoodie på, føler ro og komfort",
-  "Detaljebillede af en weighted hoodie med fokus på kvalitetsmaterialer og syninger",
-  "Gruppesamtale om mental sundhed i en lys, varm atmosfære",
-  "To grundlæggere af et mode-brand, professionelt portræt med rolig baggrund"
+  "Minimalist dark green hoodie with weighted panels, clean, Scandinavian design",
+  "Person relaxing in a living room wearing a beige weighted hoodie, feeling calm and comfortable",
+  "Detail shot of a weighted hoodie focusing on quality materials and stitching",
+  "Group conversation about mental health in a bright, warm atmosphere",
+  "Two founders of a fashion brand, professional portrait with calm background"
 ];
 
 const ImageGenerator = () => {
@@ -26,12 +26,12 @@ const ImageGenerator = () => {
 
   const handleGenerateImage = async () => {
     if (!prompt.trim()) {
-      toast.error("Indtast venligst en prompt til at generere et billede");
+      toast.error("Please enter a prompt to generate an image");
       return;
     }
 
     if (!runwareService) {
-      toast.error("Angiv venligst din Runware API-nøgle først");
+      toast.error("Please enter your Runware API key first");
       return;
     }
 
@@ -45,11 +45,11 @@ const ImageGenerator = () => {
       });
       
       addGeneratedImage(result);
-      toast.success("Billede genereret med succes!");
+      toast.success("Image generated successfully!");
       setPrompt('');
     } catch (error) {
       console.error("Error generating image:", error);
-      toast.error("Fejl ved generering af billede. Prøv igen senere.");
+      toast.error("Error generating image. Please try again later.");
     } finally {
       setIsGeneratingImage(false);
     }
@@ -57,12 +57,12 @@ const ImageGenerator = () => {
 
   const handleSaveApiKey = () => {
     if (!tempApiKey.trim()) {
-      toast.error("Indtast venligst en gyldig API-nøgle");
+      toast.error("Please enter a valid API key");
       return;
     }
     
     setApiKey(tempApiKey);
-    toast.success("API-nøgle gemt!");
+    toast.success("API key saved!");
   };
 
   const handleSelectSuggestion = (suggestion: string) => {
@@ -74,11 +74,11 @@ const ImageGenerator = () => {
       {!apiKey && (
         <Card className="animate-on-scroll">
           <CardHeader>
-            <CardTitle className="text-koze-green">Runware API-nøgle</CardTitle>
+            <CardTitle className="text-koze-green">Runware API Key</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <p className="text-koze-green/90">
-              For at generere billeder skal du bruge en Runware API-nøgle. Besøg{" "}
+              To generate images, you need a Runware API key. Visit{" "}
               <a 
                 href="https://runware.ai" 
                 target="_blank" 
@@ -87,21 +87,21 @@ const ImageGenerator = () => {
               >
                 runware.ai
               </a>{" "}
-              for at oprette en konto og få din API-nøgle.
+              to create an account and get your API key.
             </p>
             <div className="flex gap-4">
               <Input
                 type="password"
                 value={tempApiKey}
                 onChange={(e) => setTempApiKey(e.target.value)}
-                placeholder="Din Runware API-nøgle"
+                placeholder="Your Runware API key"
                 className="flex-1"
               />
               <Button 
                 onClick={handleSaveApiKey} 
                 className="bg-koze-green hover:bg-koze-green/90"
               >
-                Gem nøgle
+                Save Key
               </Button>
             </div>
           </CardContent>
@@ -112,20 +112,20 @@ const ImageGenerator = () => {
         <CardHeader>
           <CardTitle className="text-koze-green flex items-center gap-2">
             <GalleryVertical className="h-5 w-5" />
-            Billedgenerator
+            Image Generator
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           <Textarea
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
-            placeholder="Beskriv det billede, du vil generere..."
+            placeholder="Describe the image you want to generate..."
             className="min-h-[100px]"
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm text-koze-green/90 block mb-2">Bredde (px)</label>
+              <label className="text-sm text-koze-green/90 block mb-2">Width (px)</label>
               <Input
                 type="number"
                 value={width}
@@ -136,7 +136,7 @@ const ImageGenerator = () => {
               />
             </div>
             <div>
-              <label className="text-sm text-koze-green/90 block mb-2">Højde (px)</label>
+              <label className="text-sm text-koze-green/90 block mb-2">Height (px)</label>
               <Input
                 type="number"
                 value={height}
@@ -149,7 +149,7 @@ const ImageGenerator = () => {
           </div>
           
           <div>
-            <p className="text-sm text-koze-green/90 mb-2">Forslag til prompts:</p>
+            <p className="text-sm text-koze-green/90 mb-2">Prompt suggestions:</p>
             <div className="flex flex-wrap gap-2">
               {PROMPT_SUGGESTIONS.map((suggestion, index) => (
                 <Button
@@ -171,7 +171,7 @@ const ImageGenerator = () => {
             className="w-full bg-koze-green hover:bg-koze-green/90"
             disabled={!apiKey || isGeneratingImage}
           >
-            {isGeneratingImage ? "Genererer..." : "Generer billede"}
+            {isGeneratingImage ? "Generating..." : "Generate Image"}
           </Button>
         </CardFooter>
       </Card>

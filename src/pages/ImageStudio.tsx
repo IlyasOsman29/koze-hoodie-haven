@@ -12,11 +12,11 @@ const ImageStudio = () => {
       <Navbar />
       <main className="section-padding">
         <h1 className="text-4xl font-bold text-koze-green mb-6 animate-on-scroll">
-          KOZE Billedgenerator
+          KOZE Image Generator
         </h1>
         <p className="text-koze-green/90 mb-8 max-w-3xl animate-on-scroll">
-          Opret unikke billeder til dit KOZE brand med vores AI-drevne billedgenerator. Du kan generere produktbilleder,
-          stemningsbilleder og meget mere ved hjælp af tekstbeskrivelser.
+          Create unique images for your KOZE brand with our AI-powered image generator. You can generate product images,
+          mood images and much more using text descriptions.
         </p>
         
         <ImageGenerationProvider>
