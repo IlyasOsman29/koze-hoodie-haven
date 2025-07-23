@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button";
 import { ShoppingCart } from 'lucide-react';
 
 type Size = 'S' | 'M' | 'L' | 'XL';
-type Color = 'Navy' | 'Dark Green' | 'Brown';
+type Color = 'Mørkeblå' | 'Mørkegrøn' | 'Brun';
 
 const Products = () => {
   const [selectedSize, setSelectedSize] = useState<Size>('M');
-  const [selectedColor, setSelectedColor] = useState<Color>('Navy');
+  const [selectedColor, setSelectedColor] = useState<Color>('Mørkeblå');
   
   return (
     <section id="products" className="section-padding">
       <div className="text-center mb-16 animate-on-scroll">
         <h2 className="text-3xl md:text-4xl font-bold text-koze-green mb-4">
-          Our Hoodies
+          Vores Hoodies
         </h2>
         <p className="text-koze-green/90 max-w-2xl mx-auto text-balance">
-          Handmade in Denmark with care and quality materials. 
-          Our weighted hoodies are designed to give you a feeling of peace and comfort.
+          Håndlavede i Danmark med omhu og kvalitetsmaterialer. 
+          Vores vægtede hoodies er designet til at give dig en følelse af ro og komfort.
         </p>
       </div>
       
@@ -28,7 +28,7 @@ const Products = () => {
             <div className="aspect-square bg-koze-beige rounded-2xl flex items-center justify-center">
               {/* Main product image */}
               <div className="text-koze-muted text-center px-8">
-                <p className="text-lg font-medium mb-2">Product Image</p>
+                <p className="text-lg font-medium mb-2">Produktbillede</p>
                 <p className="text-sm">{selectedColor} KOZE hoodie</p>
               </div>
             </div>
@@ -36,13 +36,13 @@ const Products = () => {
             <div className="grid grid-cols-3 gap-4">
               {/* Thumbnail images */}
               <div className="aspect-square bg-koze-light rounded-lg flex items-center justify-center">
-                <span className="text-koze-muted text-sm">Image 1</span>
+                <span className="text-koze-muted text-sm">Billede 1</span>
               </div>
               <div className="aspect-square bg-koze-light rounded-lg flex items-center justify-center">
-                <span className="text-koze-muted text-sm">Image 2</span>
+                <span className="text-koze-muted text-sm">Billede 2</span>
               </div>
               <div className="aspect-square bg-koze-light rounded-lg flex items-center justify-center">
-                <span className="text-koze-muted text-sm">Image 3</span>
+                <span className="text-koze-muted text-sm">Billede 3</span>
               </div>
             </div>
           </div>
@@ -58,16 +58,16 @@ const Products = () => {
           
           <div className="space-y-6 mb-8">
             <div>
-              <h4 className="font-medium mb-2 text-koze-green">Description</h4>
+              <h4 className="font-medium mb-2 text-koze-green">Beskrivelse</h4>
               <p className="text-koze-green/90">
-                Our weighted hoodie is designed to provide an embracing, calming feeling. 
-                With strategically placed weights, it creates a sense of security and peace, wherever you are.
-                Made from sustainable, soft organic cotton.
+                Vores vægtede hoodie er designet til at give en omfavnende, beroligende følelse. 
+                Med strategisk placerede vægte, skaber den en følelse af tryghed og ro, hvor end du er.
+                Fremstillet i bæredygtigt, blødt økologisk bomuld.
               </p>
             </div>
             
             <div>
-              <h4 className="font-medium mb-3 text-koze-green">Size</h4>
+              <h4 className="font-medium mb-3 text-koze-green">Størrelse</h4>
               <div className="flex gap-3">
                 {['S', 'M', 'L', 'XL'].map((size) => (
                   <button
@@ -86,12 +86,12 @@ const Products = () => {
             </div>
             
             <div>
-              <h4 className="font-medium mb-3 text-koze-green">Color</h4>
+              <h4 className="font-medium mb-3 text-koze-green">Farve</h4>
               <div className="flex gap-3">
                 {[
-                  { name: 'Navy', bg: 'bg-koze-navy' },
-                  { name: 'Dark Green', bg: 'bg-koze-green' },
-                  { name: 'Brown', bg: 'bg-koze-brown' }
+                  { name: 'Mørkeblå', bg: 'bg-koze-navy' },
+                  { name: 'Mørkegrøn', bg: 'bg-koze-green' },
+                  { name: 'Brun', bg: 'bg-koze-brown' }
                 ].map((color) => (
                   <button
                     key={color.name}
@@ -106,18 +106,18 @@ const Products = () => {
                 ))}
               </div>
               <p className="mt-2 text-sm text-koze-green/80">
-                Selected: {selectedColor}
+                Valgt: {selectedColor}
               </p>
             </div>
             
             <div>
-              <h4 className="font-medium mb-2 text-koze-green">Features</h4>
+              <h4 className="font-medium mb-2 text-koze-green">Funktioner</h4>
               <ul className="list-disc list-inside space-y-1 text-koze-green/90">
-                <li>Evenly distributed weights (2.5 kg)</li>
-                <li>100% organic cotton</li>
-                <li>Soft fleece lining</li>
-                <li>Washable at 30 degrees</li>
-                <li>Made in Denmark</li>
+                <li>Jævnt fordelte vægte (2,5 kg)</li>
+                <li>100% økologisk bomuld</li>
+                <li>Blødt fleece-for</li>
+                <li>Vaskbar ved 30 grader</li>
+                <li>Produceret i Danmark</li>
               </ul>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Products = () => {
             size="lg"
           >
             <ShoppingCart className="h-5 w-5 mr-2" />
-            Add to cart
+            Læg i kurv
           </Button>
         </div>
       </div>

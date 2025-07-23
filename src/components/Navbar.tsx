@@ -50,16 +50,16 @@ const Navbar = () => {
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#about" className="text-koze-green/90 hover:text-koze-green font-medium transition-colors">
-              About us
+              Om os
             </a>
             <a href="#products" className="text-koze-green/90 hover:text-koze-green font-medium transition-colors">
-              Products
+              Produkter
             </a>
             <a href="#science" className="text-koze-green/90 hover:text-koze-green font-medium transition-colors">
-              Science
+              Forskning
             </a>
             <a href="#testimonials" className="text-koze-green/90 hover:text-koze-green font-medium transition-colors">
-              Testimonials
+              Oplevelser
             </a>
             <a href="#community" className="text-koze-green/90 hover:text-koze-green font-medium transition-colors">
               Community
@@ -80,28 +80,28 @@ const Navbar = () => {
               className="text-koze-green/90 hover:text-koze-green font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              About us
+              Om os
             </a>
             <a 
               href="#products" 
               className="text-koze-green/90 hover:text-koze-green font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Produkter
             </a>
             <a 
               href="#science" 
               className="text-koze-green/90 hover:text-koze-green font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Science
+              Forskning
             </a>
             <a 
               href="#testimonials" 
               className="text-koze-green/90 hover:text-koze-green font-medium transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Testimonials
+              Oplevelser
             </a>
             <a 
               href="#community" 
@@ -112,7 +112,7 @@ const Navbar = () => {
             </a>
             <Button variant="outline" className="flex items-center justify-center">
               <ShoppingCart className="h-5 w-5 mr-2" />
-              <span>Cart</span>
+              <span>Kurv</span>
             </Button>
           </div>
         </div>

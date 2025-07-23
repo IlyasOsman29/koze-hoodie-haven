@@ -25,10 +25,10 @@ const Community = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-bold text-koze-green mb-4 text-balance">
-            Et fællesskab for mental sundhed
+            Et community for mental sundhed
           </h2>
           <p className="text-koze-green/90 mb-6">
-            KOZE handler om mere end bare et produkt. Vi ønsker at skabe et fællesskab hvor vi kan tale åbent om mental sundhed og støtte hinanden.
+            KOZE handler om mere end bare et produkt. Vi ønsker at skabe et fællesskab, hvor vi kan tale åbent om mental sundhed og støtte hinanden.
           </p>
           <div className="space-y-6">
             <CommunityCard 
@@ -38,13 +38,13 @@ const Community = () => {
             />
             <CommunityCard 
               icon={<span className="text-koze-green text-xl">📚</span>}
-              title="Vidensbase" 
+              title="Vidensbank" 
               description="Artikler, guides og ressourcer om angst, stress og teknikker til at håndtere det."
             />
             <CommunityCard 
               icon={<span className="text-koze-green text-xl">🤝</span>}
               title="Støttegrupper" 
-              description="Lokale meetups hvor brugere kan mødes og dele oplevelser i trygge rammer."
+              description="Lokale meet-ups hvor brugere kan mødes og dele erfaringer i trygge rammer."
             />
           </div>
           <Button 
@@ -58,7 +58,7 @@ const Community = () => {
           <div className="aspect-square bg-koze-light rounded-2xl flex items-center justify-center">
             {/* We'll replace this with actual community image */}
             <div className="text-koze-muted text-center px-8">
-              <p className="text-lg font-medium mb-2">Fællesskabsbillede</p>
+              <p className="text-lg font-medium mb-2">Community billede</p>
               <p className="text-sm">KOZE fællesskabet</p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Community = () => {
           Vores vision
         </h3>
         <p className="text-koze-green/90 max-w-3xl mx-auto text-balance">
-          Vi tror på en verden hvor det er lige så naturligt at tale om mental sundhed som det er om fysisk sundhed. 
+          Vi tror på en verden, hvor det er lige så naturligt at tale om mental sundhed som om fysisk sundhed. 
           Hvor ingen behøver at skjule deres angst eller stress, og hvor vi alle har værktøjer til at finde ro i en travl hverdag. 
           KOZE er vores bidrag til denne vision.
         </p>

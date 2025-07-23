@@ -19,29 +19,29 @@ const Testimonials = () => {
     <section id="testimonials" className="section-padding">
       <div className="text-center mb-12 animate-on-scroll">
         <h2 className="text-3xl md:text-4xl font-bold text-koze-green mb-4">
-          What our customers say
+          Hvad vores kunder siger
         </h2>
         <p className="text-koze-green/90 max-w-2xl mx-auto text-balance">
-          We are proud to hear how our products help people find peace in everyday life. 
-          Here are some of the stories we have received.
+          Vi er stolte over at høre hvordan vores produkter hjælper mennesker med at finde ro i hverdagen. 
+          Her er nogle af de historier vi har modtaget.
         </p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-on-scroll" style={{animationDelay: "0.2s"}}>
         <TestimonialCard 
-          quote="My KOZE hoodie has made a huge difference in my everyday life. I put it on when I feel anxiety creeping in, and it helps me find peace again. It's like getting a hug when you need it most."
+          quote="Min KOZE hoodie har gjort en enorm forskel i min hverdag. Jeg tager den på når jeg mærker angsten komme snigende, og den hjælper mig med at finde ro igen. Det er som at få et kram, når man har allermest brug for det."
           author="Marie K."
-          title="Student, 24 years old"
+          title="Studerende, 24 år"
         />
         <TestimonialCard 
-          quote="I have struggled with sleep problems for years. My weighted KOZE hoodie has given me the opportunity to relax in the evening, and I now fall asleep faster and sleep better. It's a fantastic product."
+          quote="Jeg har kæmpet med søvnproblemer i årevis. Min vægtede KOZE hoodie har givet mig mulighed for at slappe af om aftenen, og jeg falder nu i søvn hurtigere og sover bedre. Det er et fantastisk produkt."
           author="Thomas L."
-          title="IT consultant, 36 years old"
+          title="IT-konsulent, 36 år"
         />
         <TestimonialCard 
-          quote="As a person with ADHD, I often experience sensory overstimulation. My KOZE hoodie gives me the peace I need in stressful situations. It's the best purchase I've made for my mental health in a long time."
+          quote="Som person med ADHD oplever jeg ofte sensorisk overstimulering. Min KOZE hoodie giver mig den ro jeg har brug for i stressende situationer. Det er det bedste køb jeg har gjort for mit mentale helbred i lang tid."
           author="Sofie R."
-          title="Graphic designer, 29 years old"
+          title="Grafisk designer, 29 år"
         />
       </div>
     </section>
