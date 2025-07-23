@@ -7,46 +7,46 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-xl mb-4">KOZE</h3>
             <p className="text-white/80 text-sm">
-              Weighted hoodies designed to help people with anxiety and restlessness find security in everyday life.
+              Weighted hoodies designet til at hjælpe mennesker med angst og uro med at finde tryghed i hverdagen.
             </p>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Information</h4>
             <ul className="space-y-2 text-white/80 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">About KOZE</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Sustainability</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our mission</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact us</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Om KOZE</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Bæredygtighed</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Vores mission</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Kontakt os</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Customer Service</h4>
+            <h4 className="font-semibold mb-4">Kundeservice</h4>
             <ul className="space-y-2 text-white/80 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Shipping</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Return Policy</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Fragt</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Returpolitik</a></li>
               <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Size Guide</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Størrelsesguide</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Stay updated</h4>
+            <h4 className="font-semibold mb-4">Hold dig opdateret</h4>
             <p className="text-white/80 text-sm mb-4">
-              Subscribe to our newsletter to get the latest updates and good advice about mental health.
+              Tilmeld dig vores nyhedsbrev for at få de seneste opdateringer og gode råd om mental sundhed.
             </p>
             <form className="flex">
               <input 
                 type="email" 
-                placeholder="Your email" 
+                placeholder="Din email" 
                 className="px-3 py-2 rounded-l-md text-koze-green w-full text-sm"
               />
               <button 
                 type="submit" 
                 className="bg-koze-brown hover:bg-koze-brown/90 px-3 py-2 rounded-r-md text-white font-medium text-sm"
               >
-                Subscribe
+                Tilmeld
               </button>
             </form>
           </div>
@@ -55,9 +55,9 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-white/70 text-sm">
           <p>© 2025 KOZE. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Privatlivspolitik</a>
+            <a href="#" className="hover:text-white transition-colors">Handelsbetingelser</a>
+            <a href="#" className="hover:text-white transition-colors">Cookie Politik</a>
           </div>
         </div>
       </div>

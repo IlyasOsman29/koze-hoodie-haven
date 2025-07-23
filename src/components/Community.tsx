@@ -25,32 +25,32 @@ const Community = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-bold text-koze-green mb-4 text-balance">
-            A community for mental health
+            Et fællesskab for mental sundhed
           </h2>
           <p className="text-koze-green/90 mb-6">
-            KOZE is about more than just a product. We want to create a community where we can talk openly about mental health and support each other.
+            KOZE handler om mere end bare et produkt. Vi ønsker at skabe et fællesskab hvor vi kan tale åbent om mental sundhed og støtte hinanden.
           </p>
           <div className="space-y-6">
             <CommunityCard 
               icon={<span className="text-koze-green text-xl">💬</span>}
               title="KOZE Talks" 
-              description="Monthly online conversations about mental health with experts and the community."
+              description="Månedlige online samtaler om mental sundhed med eksperter og fællesskabet."
             />
             <CommunityCard 
               icon={<span className="text-koze-green text-xl">📚</span>}
-              title="Knowledge Base" 
-              description="Articles, guides and resources about anxiety, stress and techniques to handle it."
+              title="Vidensbase" 
+              description="Artikler, guides og ressourcer om angst, stress og teknikker til at håndtere det."
             />
             <CommunityCard 
               icon={<span className="text-koze-green text-xl">🤝</span>}
-              title="Support Groups" 
-              description="Local meet-ups where users can meet and share experiences in safe spaces."
+              title="Støttegrupper" 
+              description="Lokale meetups hvor brugere kan mødes og dele oplevelser i trygge rammer."
             />
           </div>
           <Button 
             className="mt-8 bg-koze-green hover:bg-koze-green/90 text-white font-medium"
           >
-            Join the community
+            Bliv en del af fællesskabet
           </Button>
         </div>
         
@@ -58,8 +58,8 @@ const Community = () => {
           <div className="aspect-square bg-koze-light rounded-2xl flex items-center justify-center">
             {/* We'll replace this with actual community image */}
             <div className="text-koze-muted text-center px-8">
-              <p className="text-lg font-medium mb-2">Community image</p>
-              <p className="text-sm">The KOZE community</p>
+              <p className="text-lg font-medium mb-2">Fællesskabsbillede</p>
+              <p className="text-sm">KOZE fællesskabet</p>
             </div>
           </div>
         </div>
@@ -67,12 +67,12 @@ const Community = () => {
       
       <div className="mt-16 text-center animate-on-scroll" style={{animationDelay: "0.4s"}}>
         <h3 className="text-2xl font-bold text-koze-green mb-4">
-          Our vision
+          Vores vision
         </h3>
         <p className="text-koze-green/90 max-w-3xl mx-auto text-balance">
-          We believe in a world where it's as natural to talk about mental health as it is about physical health. 
-          Where no one needs to hide their anxiety or stress, and where we all have tools to find peace in a busy everyday life. 
-          KOZE is our contribution to this vision.
+          Vi tror på en verden hvor det er lige så naturligt at tale om mental sundhed som det er om fysisk sundhed. 
+          Hvor ingen behøver at skjule deres angst eller stress, og hvor vi alle har værktøjer til at finde ro i en travl hverdag. 
+          KOZE er vores bidrag til denne vision.
         </p>
       </div>
     </section>
